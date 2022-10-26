@@ -1,650 +1,1172 @@
-const asia = "Asia"
-const africa = "Africa"
-const europe = "Europe"
-const n_america = "North America"
-const s_america = "Sout America"
-const oceania = "Oceania"
-
-
-const country0 = 'Albânia'
-const albania = country0
-const country1 = ' Alemanha'
-const alemanha = country1
-const country2 = ' Andorra'
-const andorra = country2
-const country3 = ' Áustria'
-const austria = country3
-const country4 = ' Bélgica'
-const belgica = country4
-const country5 = ' Bielorrússia'
-const bielorrusia = country5
-const country6 = ' Bósnia e Herzegovina'
-const bosnia = country6
-const country7 = ' Bulgária'
-const bulgaria = country7
-const country8 = ' Chipre'
-const chipre = country8
-const country9 = ' Cosovo'
-const cosovo = country9
-const country10 = ' Croácia'
-const croacia = country10
-const country11 = ' Dinamarca'
-const dinamarca = country11
-const country12 = ' Eslováquia'
-const eslovaquia = country12
-const country13 = ' Eslovénia'
-const eslovenia = country13
-const country14 = ' Espanha'
-const espanha = country14
-const country15 = ' Estónia'
-const estonia = country15
-const country16 = ' Finlândia'
-const finlandia = country16
-const country17 = ' França'
-const franca = country17
-const country18 = ' Grécia'
-const grecia = country18
-const country19 = ' Hungria'
-const hungria = country19
-const country20 = ' Irlanda'
-const irlanda = country20
-const country21 = ' Islândia'
-const islandia = country21
-const country22 = ' Itália'
-const italia = country22
-const country23 = ' Letónia'
-const letonia = country23
-const country24 = ' Listenstaine'
-const listenstaine = country24
-const country25 = ' Lituânia'
-const lituania = country25
-const country26 = ' Luxemburgo'
-const luxemburgo = country26
-const country27 = ' Macedónia do Norte'
-const macedoniaDoNorte = country27
-const country28 = ' Malta'
-const malta = country28
-const country29 = ' Moldávia'
-const moldavia = country29
-const country30 = ' Mónaco'
-const monaco = country30
-const country31 = ' Montenegro'
-const montenegro = country31
-const country32 = ' Noruega'
-const noruega = country32
-const country33 = ' Países Baixos'
-const paisesBaixos = country33
-const country34 = ' Polónia'
-const polonia = country34
-const country35 = ' Portugal'
-const portugal = country35
-const country36 = ' Reino Unido'
-const reinoUnido = country36
-const country37 = ' República Checa'
-const republicaCheca = country37
-const country38 = ' Roménia'
-const romenia = country38
-const country39 = ' Rússia'
-const russia = country39
-const country40 = ' São Marinho'
-const saoMarinho = country40
-const country41 = ' Sérvia'
-const servia = country41
-const country42 = ' Suécia'
-const suecia = country42
-const country43 = ' Suíça'
-const suica = country43
-const country44 = ' Ucrânia'
-const ucrania = country44
-const country45 = ' Vaticano'
-const vaticano = country45
-
-
-
-
-
-// const country0 = 'Albânia'
-const capital0 = 'Tirana'
-const gov0 = 'República parlamentarista'
-const area0 = 28748
-const population0 = 2934363
-const lang0 = 'Albanês'
-const money0 = 'Lek albanês (ALL)'
-const neighbors0 = [ cosovo, grecia, montenegro ] 
-const ue0 = false
-// const albania = country0
-
-// const country1 = "Alemanha"
-const capital1 = 'Berlim'
-const gov1 = 'República federal Parlamentarista'
-const area1 = 357021
-const population1 = 82293457
-const lang1 = 'Alemão'
-const money1 =  'Euro (EUR)'
-const neighbors1 = [belgica, dinamarca, franca, luxemburgo, paisesBaixos, polonia, republicaCheca, suica, austria]
-const ue1 = true
-// const alemanha = country1
-
-// const country2 = 'Andorra'
-const capital2 = 'Andorra-a-Velha'
-const gov2 = 'Diarquia constitucional'
-const area2 = 468
-const population2 = 76953
-const lang2 = 'Catalão'
-const money2 = 'Euro (EUR)'
-const neighbors2 = [espanha, franca]
-const ue2 = false
-// const andorra = country2
-
-// const country3 = 'Áustria'
-const capital3 = 'Viena'
-const gov3 = 'República Federal Parlamentarista'
-const area3 = 83871
-const population3 = 8751820
-const lang3 = 'Alemão'
-const money3 = 'Euro (EUR)'
-const neighbors3 = [alemanha, eslovaquia, eslovenia, hungria, italia, listenstaine, republicaCheca, suica]
-const ue3 = true
-// const austria = country3
-
-// const country4 = 'Bélgica'
-const capital4 = 'Bruxelas'
-const gov4 = 'Monarquia constitucional Democracia Federal Parlamentar'
-const area4 = 30528
-const population4 = 11498519
-const lang4 = 'Alemão, Francês, Neerlandês'
-const money4 = 'EURO (EUR)'
-const neighbors4 = [alemanha, franca, luxemburgo, paisesBaixos]
-const ue4 = true
-// const belgica = country4
-
-// const country5 = 'Bielorrússia'
-const capital5 = 'Minsque'
-const gov5 ='República presidencialista'
-const area5 =  207600
-const population5 = 9452113
-const lang5 = 'Bielorrusso, Russo'
-const money5 = 'Rublo bielorrusso (BYN)'
-const neighbors5 = [letonia, lituania, polonia, russia, ucrania]
-const ue5 = false
-// const bielorrusia = country5
-
-// const country6 = 'Bósnia e Herzegovina'
-const capital6 = 'Saraievo'
-const gov6 = 'República parlamentarista'
-const area6 = 51197
-const population6 = 3503554
-const lang6 = 'Bósnio, Croata, Sérvio'
-const money6 = 'Marco convertível da Bósnia e Herzegovina (BAM)'
-const neighbors6 = [croacia, montenegro, servia]
-const ue6 = false
-// const bosnia = country6
-
-// const country7 = 'Bulgária'
-const capital7 = 'Sófia'
-const gov7 = 'República parlamentarista'
-const area7 = 110879
-const population7 = 7036848
-const lang7 = 'Búlgaro'
-const money7 = 'Lev búlgaro (BGN)'
-const neighbors7 = [grecia, romenia, servia, 'Turquia']
-const ue7 = true
-// const bulgaria = country7
-
-
-// const country8 = 'Chipre'
-const capital8 = 'Nicósia'
-const gov8 = 'República presidencialista'
-const area8 = 9251
-const population8 = 1189085
-const lang8 = 'Greco, Turco'
-const money8 = 'EURO (EUR)'
-const neighbors8 = null
-const ue8 = true
-// const chipre = country8
-
-// const country9 = 'Cosovo'
-const capital9 = 'Pristina'
-const gov9 = 'República parlamentarista'
-const area9 = 10887
-const population9 = 1797151
-const lang9 = 'Albanês, Sérvio'
-const money9 = 'EURO (EUR)'
-const neighbors9 = [albania, montenegro, servia]
-const ue9 = false
-// const cosovo = country9
-
-// const country10 = 'Croácia'
-const capital10 = 'Zagrebe'
-const gov10 = 'República parlamentarista'
-const area10 = 56594
-const population10 = 4164783
-const lang10 = 'Croata'
-const money10 = 'Kuna croata (HRK)'
-const neighbors10 = [bosnia, eslovenia, hungria, montenegro, servia]
-const ue10 = true
-// const croacia = country10
-
-// const country11 = 'Dinamarca'
-const capital11 = 'Copenhaga'
-const gov11 = 'Monarquia Constitucional'
-const area11 = 43098
-const population11 = 5754356
-const lang11 = 'Dinamarquês'
-const money11 = 'Coroa dinamarquesa (DKK)'
-const neighbors11 = [alemanha, suecia]
-const ue11 = true
-// const dinamarca = country11
-
-// const country12 = 'Eslováquia'
-const capital12 = 'Bratislava'
-const gov12 = 'República parlamentarista'
-const area12 = 49037
-const population12 = 5449816
-const lang12 = 'Eslovaco'
-const money12 = 'EURO (EUR)'
-const neighbors12 = [hungria, polonia, republicaCheca, ucrania, austria]
-const ue12 = true
-// const eslovaquia = country12
-
-// const country13 = 'Eslovénia'
-const capital13 = 'Liubliana'
-const gov13 = 'República parlamentarista'
-const area13 = 20273
-const population13 = 2081260
-const lang13 = 'Esloveno'
-const money13 = 'EURO (EUR)'
-const neighbors13 = [croacia, hungria, italia, austria ]
-const ue13 = true
-// const eslovenia = country13
-
-// const country14 = 'Espanha'
-const capital14 = 'Madrid'
-const gov14 = 'Monarquia Constitucional'
-const area14 = 505992
-const population14 = 46397452
-const lang14 = 'Espanhol'
-const money14 = 'EURO (EUR)'
-const neighbors14 = [andorra, franca, "Marrocos", portugal]
-const ue14 = true
-// const espanha = country14
-
-// const country15 = 'Estónia'
-const capital15 = 'Talim'
-const gov15 = 'República parlamentarista'
-const area15 = 45227
-const population15 = 1306788
-const lang15 = 'Estoniano'
-const money15 = 'EURO (EUR)'
-const neighbors15 = [letonia, russia]
-const ue15 = true
-// const estonia = country15
-
-// const country16 = 'Finlândia'
-const capital16 = 'Helsínquia'
-const gov16 = 'República parlamentarista'
-const area16 = 338424
-const population16 = 5542517
-const lang16 = 'Finlandês, Sueco'
-const money16 = 'EURO (EUR)'
-const neighbors16 = [noruega, russia, suecia]
-const ue16 = true
-// const finlandia = country16
-
-// const country17 = 'França'
-const capital17 = 'Oaris'
-const gov17 = 'República unitária semipresidencialista'
-const area17 = 640597
-const population17 = 65233271
-const lang17 = 'Francês'
-const money17 = 'EURO (EUR)'
-const neighbors17 = [alemanha, andorra, belgica, espanha, italia, luxemburgo, monaco, suica]
-const ue17 = true
-// const franca = country17
-
-// const country18 = 'Grécia'
-const capital18 = 'Atenas'
-const gov18 = 'República parlamentarista'
-const area18 = 131957
-const population18 = 11142161
-const lang18 = 'Greco'
-const money18 = 'EURO (EUR)'
-const neighbors18 = [albania, bulgaria, "Turquia"]
-const ue18 = true
-// const grecia = country18
-
-// const country19 = 'Hungria'
-const capital19 = 'Budapest'
-const gov19 = 'República parlamentarista'
-const area19 = 93028
-const population19 = 9688847
-const lang19 = 'Húngaro'
-const money19 = 'Florim húngaro (HUF)'
-const neighbors19 = [croacia, eslovaquia, eslovenia, romenia, servia, ucrania, austria]
-const ue19 = true
-// const hungria = country19
-
-// const country20 = 'Irlanda'
-const capital20 = 'Dublim'
-const gov20 = 'República parlamentarista'
-const area20 = 70273
-const population20 = 4803748
-const lang20 = 'Inglês, Irlandês'
-const money20 = 'EURO (EUR)'
-const neighbors20 = [reinoUnido]
-const ue20 = true
-// const irlanda = country20
-
-// const country21 = 'Islândia'
-const capital21 = 'Reiquiavique'
-const gov21 = 'República parlamentarista'
-const area21 = 103000
-const population21 = 337780
-const lang21 = 'Islandês'
-const money21 = 'Coroa islandesa (ISK)'
-const neighbors21 = null
-const ue21 = false
-// const islandia = country21
-
-// const country22 = 'Itália'
-const capital22 = 'Roma'
-const gov22 = 'República parlamentarista'
-const area22 = 301336
-const population22 = 59290969
-const lang22 = 'Italiano'
-const money22 = 'EURO (EUR)'
-const neighbors22 = [eslovenia, franca, suica, saoMarinho, vaticano, austria]
-const ue22 = true
-// const italia = country22
-
-// const country23 = 'Letónia'
-const capital23 = 'Riga'
-const gov23 = 'República parlamentarista'
-const area23 = 64559
-const population23 = 1929938
-const lang23 = 'Letão'
-const money23 = 'EURO (EUR)'
-const neighbors23 = [bielorrusia, estonia, lituania, russia]
-const ue23 = true
-// const letonia = country23
-
-// const country24 = 'Listenstaine'
-const capital24 = 'Vaduz'
-const gov24 = 'Monarquia Constitucional'
-const area24 = 160
-const population24 = 38155
-const lang24 = 'Alemão'
-const money24 = 'Franco suíço (CHF)'
-const neighbors24 = [suica, austria]
-const ue24 = false
-// const listenstaine = country24
-
-// const country25 = 'Lituânia'
-const capital25 = 'Vílnius'
-const gov25 = 'República presidencialista'
-const area25 = 65300
-const population25 = 2876475
-const lang25 = 'Lituano'
-const money25 = 'EURO (EUR)'
-const neighbors25 = [bielorrusia, letonia, polonia, russia]
-const ue25 = true
-// const lituania = country25
-
-// const country26 = 'Luxemburgo'
-const capital26 = 'Luxemburgo'
-const gov26 = 'Monarquia constitucional'
-const area26 = 2586
-const population26 = 590321
-const lang26 = 'Alemão, Francês, Luxemburguês'
-const money26 = 'EURO (EUR)'
-const neighbors26 = [alemanha, belgica, franca]
-const ue26 = true
-// const luxemburgo = country26
-
-// const country27 = 'Macedónia do Norte'
-const capital27 = 'Escópia'
-const gov27 = 'República parlamentarista'
-const area27 = 25713
-const population27 = 2085051
-const lang27 = 'Macedónio'
-const money27 = 'Dinar macedónio (MKD)'
-const neighbors27 = [albania, bulgaria, cosovo, grecia, servia]
-const ue27 = false
-// const macedoniaDoNorte = country27
-
-// const country28 = 'Malta'
-const capital28 = 'Valeta'
-const gov28 = 'República parlamentarista'
-const area28 = 316
-const population28 = 432089
-const lang28 = 'Inglês, Maltês'
-const money28 = 'EURO (EUR)'
-const neighbors28 = null
-const ue28 = true
-// const malta = country28
-
-// const country29 = 'Moldávia'
-const capital29 = 'Quixinau'
-const gov29 = 'República parlamentarista'
-const area29 = 33856
-const population29 = 4041065
-const lang29 = 'Romeno'
-const money29 = 'Leu moldávio (MDL)'
-const neighbors29 = [romenia, ucrania]
-const ue29 = false
-// const moldavia = country29
-
-// const country30 = 'Mónaco'
-const capital30 = 'Mónaco'
-const gov30 = 'Monarquia constitucional'
-const area30 = 2
-const population30 = 38897
-const lang30 = 'Francês'
-const money30 = 'EURO (EUR)'
-const neighbors30 = [franca]
-const ue30 = false
-// const monaco = country30
-
-// const country31 = 'Montenegro'
-const capital31 = 'Podgoritsa'
-const gov31 = 'República parlamentarista'
-const area31 = 13821
-const population31 = 629219
-const lang31 = 'Montenegrino'
-const money31 = 'EURO (EUR)'
-const neighbors31 = [albania, bosnia, cosovo, croacia, servia]
-const ue31 = false
-// const montenegro = country31
-
-// const country32 = 'Noruega'
-const capital32 = 'Oslo'
-const gov32 = 'Monarquia constitucional'
-const area32 = 323782
-const population32 = 5353363
-const lang32 = 'Norueguês'
-const money32 = 'Coroa norueguesa (NOK)'
-const neighbors32 = [finlandia, russia, suecia]
-const ue32 = false
-// const noruega = country32
-
-// const country33 = 'Países Baixos'
-const capital33 = 'Amesterdão'
-const gov33 = 'Monarquia constitucional'
-const area33 = 41540
-const population33 = 17084459
-const lang33 = 'Neerlandês'
-const money33 = 'EURO (EUR)'
-const neighbors33 = [alemanha, belgica]
-const ue33 = true
-// const paisesBaixos = country33
-
-// const country34 = 'Polónia'
-const capital34 = 'Varsóvia'
-const gov34 = 'República parlamentarista'
-const area34 = 312685
-const population34 = 38104932
-const lang34 = 'Polaco'
-const money34 = 'Zlóti polaco (PLN)'
-const neighbors34 = [alemanha, bielorrusia, eslovaquia, lituania, republicaCheca, russia, ucrania]
-const ue34 = true
-// const polonia = country34
-
-// const country35 = 'Portugal'
-const capital35 = 'Lisboa'
-const gov35 = ' República constitucional unitária semipresidencialista'
-const area35 = 92090
-const population35 = 10291196
-const lang35 = 'Português'
-const money35 = 'Euro (EUR)'
-const neighbors35 = [espanha]
-const ue35 = true
-// const portugal = country35
-
-// const country36 = 'Reino Unido'
-const capital36 = 'Londres'
-const gov36 = 'Monarquia constitucional parlamentar'
-const area36 = 242900
-const population36 = 66573504
-const lang36 = 'Inglês'
-const money36 = 'Libra esterlina (GBP)'
-const neighbors36 = [irlanda]
-const ue36 = false
-// const reinoUnido = country36
-
-// const country37 = 'República Checa'
-const capital37 = 'Praga'
-const gov37 = 'República parlamentarista'
-const area37 = 78865
-const population37 = 10625250
-const lang37 = 'Checo'
-const money37 = 'Coroa checa (CZK)'
-const neighbors37 = [alemanha, eslovaquia, polonia, austria]
-const ue37 = true
-// const republicaCheca = country37
-
-// const country38 = 'Roménia'
-const capital38 = 'Bucareste'
-const gov38 = 'República semipresidencialista'
-const area38 = 238391
-const population38 = 19580634
-const lang38 = 'Romeno'
-const money38 = 'Leu romeno (RON)'
-const neighbors38 = [bulgaria, hungria, moldavia, servia, ucrania]
-const ue38 = true
-// const romenia = country38
-
-// const country39 = 'Rússia'
-const capital39 = 'Moscovo'
-const gov39 = 'República semipresidencialista'
-const area39 = 17098200
-const population39 = 143964709
-const lang39 = 'Russo'
-const money39 = 'Rublo russo (RUB)'
-const neighbors39 = ["Azerbaijão", bielorrusia, "Cazaquistão", "China", "Coreia do Norte", estonia, finlandia, "Geórgia", letonia, lituania, "Mongólia", noruega, polonia, ucrania]
-const ue39 = false
-// const russia = country39
-
-// const country40 = 'São Marinho'
-const capital40 = 'São Marinho'
-const gov40 = 'República parlamentarista'
-const area40 = 61
-const population40 = 33557
-const lang40 = 'Italiano'
-const money40 = 'EURO (EUR)'
-const neighbors40 = [italia]
-const ue40 = false
-// const saoMarinho = country40
-
-// const country41 = 'Sérvia'
-const capital41 = 'Belgrado'
-const gov41 = 'República parlamentarista'
-const area41 = 88361
-const population41 = 8762027
-const lang41 = 'Sérvio'
-const money41 = 'Dinar sérvio (RSD)'
-const neighbors41 = [bulgaria, bosnia, cosovo, croacia, hungria, montenegro, romenia]
-const ue41 = false
-// const servia = country41
-
-// const country42 = 'Suécia'
-const capital42 = 'Estocolmo'
-const gov42 = 'Monarquia constitucional'
-const area42 = 450295
-const population42 = 9982709
-const lang42 = 'Sueco'
-const money42 = 'Coroa sueca (SEK)'
-const neighbors42 = [dinamarca, finlandia, noruega]
-const ue42 = false
-// const suecia = country42
-
-// const country43 = 'Suíça'
-const capital43 = 'Berna'
-const gov43 = 'República federal'
-const area43 = 41277
-const population43 = 8544034
-const lang43 = 'Alemão, Francês, Italiano, Romanche'
-const money43 = 'Franco suíço (CHF)'
-const neighbors43 = [alemanha, franca, italia, listenstaine, austria]
-const ue43 = false
-// const suica = country43
-
-// const country44 = 'Ucrânia'
-const capital44 = 'Quieve'
-const gov44 = 'República semipresidencialista'
-const area44 = 603500
-const population44 = 44009214
-const lang44 = 'Ucraniano'
-const money44 = 'Grívnia ucraniana (UAH)'
-const neighbors44 = [bielorrusia, eslovaquia, hungria, moldavia, polonia, romenia, russia]
-const ue44 = false
-// const ucrania = country44
-
-// const country45 = 'Vaticano'
-const capital45 = 'Vaticano'
-const gov45 = 'Monarquia absoluta eletiva teocrática'
-const area45 = 0.44
-const population45 = 801
-const lang45 = 'Italiano'
-const money45 = 'EURO (EUR)'
-const neighbors45 = [italia]
-const ue45 = false
-// const vaticano = country45
-
-const mediaPop = ((
-    population0 + population1 + population2 + population3 + population4 + population5 + population6 + population7 + population8 + population9 + population10 + population11 + population12 +
-    population13 + population14 + population15 + population16 + population17 + population18 + population19 + population20 + population21 + population22 + population23 + population24 +
-    population25 + population26 + population27 + population28 + population29 + population30 + population31 + population32 + population33 + population34 + population35 + population36 +
-    population37 + population38 + population39 + population40 + population41 + population42 + population43 + population44 + population45 ) / 46
-    )
-
-    console.log(mediaPop)
-
-const uniaoEuropeia = (
-    ue0&&ue1&&ue2&&ue3&&ue4&&ue5&&ue6&&ue7&&ue8&&ue9&&ue10&&ue11&&ue12&&ue13&&ue14&&ue15&&ue16&&ue17&&ue18&&ue19&&ue20&&ue21&&ue22&&ue23&&ue24&&ue25&&ue26&&
-    ue27&&ue28&&ue29&&ue30&&ue31&&ue32&&ue33&&ue34&&ue35&&ue36&&ue37&&ue38&&ue39&&ue40&&ue41&&ue42&&ue43&&ue44&&ue45
-)
-
-console.log(uniaoEuropeia)
-
-console.log(`
-${belgica.toUpperCase}
-Captital: ${capital4}
-Governo: ${gov4}
-Area: ${area4} km2
-Populacao: ${population4}
-Idioma: ${lang4}
-Moeda: ${money4}
-Paises Vizinhos:${neighbors4}
-Faz parte da Uniao Europeia? ${ue4}
-
-
-
-
-
-`)
-
-
-
-
+const socialIcons = {
+  twitter: "./assets/twitter-player.png",
+  twitch: "./assets/twitch.png",
+  insta: "./assets/instagram.png"
+}
+
+
+
+const player1 = {
+    nick:'s1mple',
+    name: 'Oleksandr Kostyliev  ',
+    photo: './assets/CARD-SIMPLE.png',
+    countryFlag: './assets/ukraine_flag.webp',
+    age: 25+' years',
+    team: 'Natus Vincere  ',
+    teamFlag: './assets/Navi LOGO.svg',
+    rankposition: 1,
+    hasMajor: true,
+    stats: {
+        rating: 1.25,
+        dpr: 0.62,
+        kast: 74.0,
+        impact: 1.35,
+        adr: 85.7,
+        kpr: 0.85
+    },
+    social: {
+      twitter: "https://twitter.com/s1mpleO",
+      twitch: "https://www.twitch.tv/s1mple",
+      insta: "https://www.instagram.com/s1mpleo/",
+    }
+    
+}
+
+const player2 = {
+    nick: 'ZywOo',
+    name: 'Mathieu Herbaut  ',
+    photo: './assets/CARD-ZYWOO.png',
+    countryFlag: './assets/france_flag.webp',
+    age: 21+' years',
+    team: 'Vitality  ',
+    teamFlag: './assets/vit_logo.webp',
+    rankposition: 2,
+    hasMajor: false,
+    stats: {
+        rating: 1.28,
+        dpr: 0.61,
+        kast: 74.7,
+        impact: 1.36,
+        adr: 84.1,
+        kpr: 0.81,
+    },
+    social: {
+      twitter: "https://twitter.com/zywoo",
+      twitch: "https://www.twitch.tv/cs_zywoo",
+      insta: "https://www.instagram.com/cs_zywoo/",
+    }
+
+}
+const player3 = {
+    nick: 'device',
+    name: 'Nicolai Reedtz  ',
+    photo: './assets/CARD-DEVICE.png',
+    countryFlag: './assets/dinamarca.webp',
+    age: 27+' years',
+    team: 'Ninjas in Pijamas  ',
+    teamFlag: './assets/nip_logo.webp',
+    rankposition: 3,
+    hasMajor: true,
+    stats: {
+        rating: 1.15,
+        dpr: 0.63,
+        kast: 70.9,
+        impact: 1.27,
+        adr: 80.2,
+        kpr: 0.77,
+    },
+    social: {
+      twitter: "https://twitter.com/dev1ce",
+      twitch: "https://www.twitch.tv/device",
+      insta: "https://www.instagram.com/devveking/",
+    }
+
+
+}
+const player4 = {
+    nick: 'NiKo',
+    name: 'Nikola Kovač  ',
+    photo: './assets/CARD-NIKO.png',
+    countryFlag: './assets/bosnia.webp',
+    age: 25+' years',
+    team: 'G2  ',
+    teamFlag: './assets/g2_logo.webp',
+    rankposition: 4,
+    hasMajor: false,
+    stats: {
+        rating: 1.15,
+        dpr: 0.67,
+        kast: 70.9,
+        impact: 1.30,
+        adr: 86.0,
+        kpr: 0.79,
+    },
+    social: {
+      twitter: "https://twitter.com/G2NiKo",
+      twitch: "https://www.twitch.tv/NiKo",
+      insta: "https://www.instagram.com/csgoniko",
+    }
+
+}
+const player5 = {
+    nick: 'coldzera',
+    name: 'Marcelo David  ',
+    photo: './assets/CARD-COLDZERA.png',
+    countryFlag: './assets/brazil.webp',
+    age: 27+' years',
+    team: '00NATION  ',
+    teamFlag: './assets/00nation_logo.webp',
+    rankposition: 5,
+    hasMajor: true,
+    stats: {
+        rating: 1.11,
+        dpr: 0.63,
+        kast: 72.7,
+        impact: 1.06,
+        adr: 77.8,
+        kpr: 0.75,
+    },
+    social: {
+      twitter: "https://www.twitter.com/coldzera",
+      twitch: "https://www.twitch.tv/coldzin",
+      insta: "https://www.instagram.com/coldzera",
+    }
+
+}
+
+let players = []
+
+let majorWinners = []
+
+function temMajor(player){
+    if(player.hasMajor === true){
+        majorWinners.push(player)
+    }
+}
+
+
+players.push(player1, player2, player3, player4, player5)
+
+temMajor(player1)
+temMajor(player2)
+temMajor(player3)
+temMajor(player4)
+temMajor(player5)
+
+console.log(players)
+
+console.log(majorWinners)
+
+//3.1
+const printPlayer = (player) => {
+    console.log(player["nick"].toUpperCase());
+    console.log("name:", player["name"]);
+    console.log("countryFlag:", player["countryFlag"]);
+    console.log("age:", player["age"]);
+    console.log("team:", player["team"]);
+    console.log("rankposition:", player["rankposition"]);
+    console.log('hasMajor:', player['hasMajor']);
+    console.log('stats:', player['stats'])
+    console.log('----------------')
+    };
+
+    printPlayer(player1)
+    printPlayer(player2)
+    printPlayer(player3)
+    printPlayer(player4)
+    printPlayer(player5)
+
+    //Calculando Media de Rating
+
+    const calculaMedia = (arr) => {
+      let soma = 0
+      for (let i of arr){
+        soma += i.stats.rating/5
+      }
+      console.log('MEDIA DE RATING: ' +soma)
+    }
+    calculaMedia(players)
+
+  //3.2
+
+  function printWithLoops(arr) {
+    for (let obj of arr) {
+      for (let key in obj) {
+        console.log(key + ":", obj[key]);
+      }
+      console.log("------");
+    }
+  }
+  const printItems = () => {
+    printWithLoops(players);
+  };
+  
+
+  //3.3
+
+  function valuesToStr(obj) {
+    let text = "";
+    for (let key in obj) {
+      text = text + `${key}: ${obj[key]}\n`;
+    }
+    return text;
+  }
+  
+  const printObjsToStr = () => {
+    for (let object of players) {
+      console.log(valuesToStr(object));
+    }
+  };
+  
+  //3.4
+
+  function objHasString(array, string) {
+    for (let obj of array) {
+      if (obj["nick"].toLowerCase() === string.toLowerCase()) {
+        return obj;
+      }
+    }
+    alert("Nenhum item foi encontrado!");
+  }
+
+  
+
+
+//playerCard => photo/profile/stats {
+  // photo =>
+  // profile => playername => span => socialIcons
+  // profile => flag/name
+  // profile => age/years
+  // profile => team/navi-logo
+  // profile => rank
+
+  // stats => table => TR => th (RATING, DPR, KAST)
+  //          table => TR => td (stats de cima)
+  //          table => TR => th (IMPACT, ADR, KPR)
+  //          table => TR => td (stats de cima)
+
+  const addPlayer5 = () => {
+
+    let playerCard5 = document.createElement("div");
+    playerCard5.classList.add("player-card");
+    playerCard5.setAttribute('id', 'player5')
+    
+    
+    let playerPhoto = document.createElement("img");
+    playerPhoto.classList.add("player-photo");
+    playerPhoto.setAttribute('src', player5.photo)
+    playerPhoto.setAttribute('alt', 'niko')
+    
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+    
+    let stats = document.createElement("div");
+    stats.classList.add("stats-1");
+    
+    playerCard5.appendChild(playerPhoto)
+    playerCard5.appendChild(profile)
+    playerCard5.appendChild(stats)
+    
+    let playerName = document.createElement("h2")
+    playerName.classList.add("playername")
+    playerName.textContent = player5.nick
+    
+    let socialMedia = document.createElement("span")
+    
+    let twitter = document.createElement("a")
+    twitter.setAttribute('href', player5.social.twitter)
+    twitter.setAttribute('target', '_blank')
+    let twitch = document.createElement("a")
+    twitch.setAttribute('href', player5.social.twitch)
+    twitch.setAttribute('target', '_blank')
+    let insta = document.createElement("a")
+    insta.setAttribute('href', player5.social.insta)
+    insta.setAttribute('target', '_blank')
+    
+    let twitterIcon = document.createElement('img')
+    twitterIcon.classList.add('socialIcon')
+    twitterIcon.setAttribute('src', socialIcons.twitter)
+    twitterIcon.setAttribute('alt', 'twitter')
+    
+    let twitchIcon = document.createElement('img')
+    twitchIcon.classList.add('socialIcon')
+    twitchIcon.setAttribute('src', socialIcons.twitch)
+    twitchIcon.setAttribute('alt', 'twitch')
+    
+    let instaIcon = document.createElement('img')
+    instaIcon.classList.add('socialIcon')
+    instaIcon.setAttribute('src', socialIcons.insta)
+    instaIcon.setAttribute('alt', 'insta')
+    
+    
+    twitter.appendChild(twitterIcon)
+    twitch.appendChild(twitchIcon)
+    insta.appendChild(instaIcon)
+    
+    socialMedia.appendChild(twitter)
+    socialMedia.appendChild(twitch)
+    socialMedia.appendChild(insta)
+    
+    playerName.appendChild(socialMedia)
+    
+    profile.appendChild(playerName)
+    
+    let flag = document.createElement("p")
+    let flagPhoto = document.createElement("img")
+    flagPhoto.classList.add("flag")
+    flagPhoto.setAttribute('src', player5.countryFlag)
+    flagPhoto.setAttribute('alt', 'brazil-flag')
+    flag.textContent = player5.name
+    
+    flag.appendChild(flagPhoto)
+    
+    profile.appendChild(flag)
+    
+    let age = document.createElement("p")
+    age.classList.add('age')
+    age.textContent = "Age"
+    let years = document.createElement("span")
+    years.classList.add('years')
+    years.textContent = player5.age
+    
+    age.appendChild(years)
+    
+    profile.appendChild(age)
+    
+    let team = document.createElement("p")
+    team.classList.add('team')
+    team.textContent = 'Current Team'
+    let teamName = document.createElement('span')
+    teamName.textContent = player5.team
+    let teamLogo = document.createElement('img')
+    teamLogo.classList.add('navi-logo')
+    teamLogo.setAttribute('src', player5.teamFlag)
+    teamLogo.setAttribute('alt', 'team-logo')
+    
+    
+    teamName.appendChild(teamLogo)
+    team.appendChild(teamName)
+    profile.appendChild(team)
+    
+    let rank = document.createElement('h1')
+    rank.classList.add('rank')
+    rank.textContent = "#"+player5.rankposition
+    
+    profile.appendChild(rank)
+    
+    let statsTable = document.createElement('table')
+    
+    let tr1 = document.createElement('tr')
+    let tr2 = document.createElement('tr')
+    let tr3 = document.createElement('tr')
+    let tr4 = document.createElement('tr')
+    
+    let rating = document.createElement('th')
+    rating.textContent = "RATING 1.0"
+    let dpr = document.createElement('th')
+    dpr.textContent = "DPR"
+    let kast = document.createElement('th')
+    kast.textContent = "KAST"
+    
+    tr1.appendChild(rating)
+    tr1.appendChild(dpr)
+    tr1.appendChild(kast)
+    
+    let ratingStat = document.createElement('td')
+    ratingStat.textContent = player5.stats.rating
+    let dprStat = document.createElement('td')
+    dprStat.textContent = player5.stats.dpr
+    let kastStat = document.createElement('td')
+    kastStat.textContent = player5.stats.kast
+    
+    tr2.appendChild(ratingStat)
+    tr2.appendChild(dprStat)
+    tr2.appendChild(kastStat)
+    
+    let impact = document.createElement('th')
+    impact.textContent = "IMPACT"
+    let adr = document.createElement('th')
+    adr.textContent = "ADR"
+    let kpr = document.createElement('th')
+    kpr.textContent = "KPR"
+    
+    tr3.appendChild(impact)
+    tr3.appendChild(adr)
+    tr3.appendChild(kpr)
+    
+    let impactStat = document.createElement('td')
+    impactStat.textContent = player5.stats.impact
+    let adrStat = document.createElement('td')
+    adrStat.textContent = player5.stats.adr
+    let kprStat = document.createElement('td')
+    kprStat.textContent = player5.stats.kpr
+    
+    tr4.appendChild(impactStat)
+    tr4.appendChild(adrStat)
+    tr4.appendChild(kprStat)
+    
+    statsTable.appendChild(tr1)
+    statsTable.appendChild(tr2)
+    statsTable.appendChild(tr3)
+    statsTable.appendChild(tr4)
+    
+    stats.append(statsTable)
+    
+    const mainPage = document.getElementById("main")
+    
+    mainPage.insertAdjacentElement("afterbegin", playerCard5)
+    
+    }
+    
+    addPlayer5()
+
+  const addPlayer4 = () => {
+
+    let playerCard4 = document.createElement("div");
+    playerCard4.classList.add("player-card");
+    playerCard4.setAttribute('id', 'player4')
+    
+    
+    let playerPhoto = document.createElement("img");
+    playerPhoto.classList.add("player-photo");
+    playerPhoto.setAttribute('src', player4.photo)
+    playerPhoto.setAttribute('alt', 'niko')
+    
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+    
+    let stats = document.createElement("div");
+    stats.classList.add("stats-1");
+    
+    playerCard4.appendChild(playerPhoto)
+    playerCard4.appendChild(profile)
+    playerCard4.appendChild(stats)
+    
+    let playerName = document.createElement("h2")
+    playerName.classList.add("playername")
+    playerName.textContent = player4.nick
+    
+    let socialMedia = document.createElement("span")
+    
+    let twitter = document.createElement("a")
+    twitter.setAttribute('href', player4.social.twitter)
+    twitter.setAttribute('target', '_blank')
+    let twitch = document.createElement("a")
+    twitch.setAttribute('href', player4.social.twitch)
+    twitch.setAttribute('target', '_blank')
+    let insta = document.createElement("a")
+    insta.setAttribute('href', player4.social.insta)
+    insta.setAttribute('target', '_blank')
+    
+    let twitterIcon = document.createElement('img')
+    twitterIcon.classList.add('socialIcon')
+    twitterIcon.setAttribute('src', socialIcons.twitter)
+    twitterIcon.setAttribute('alt', 'twitter')
+    
+    let twitchIcon = document.createElement('img')
+    twitchIcon.classList.add('socialIcon')
+    twitchIcon.setAttribute('src', socialIcons.twitch)
+    twitchIcon.setAttribute('alt', 'twitch')
+    
+    let instaIcon = document.createElement('img')
+    instaIcon.classList.add('socialIcon')
+    instaIcon.setAttribute('src', socialIcons.insta)
+    instaIcon.setAttribute('alt', 'insta')
+    
+    
+    twitter.appendChild(twitterIcon)
+    twitch.appendChild(twitchIcon)
+    insta.appendChild(instaIcon)
+    
+    socialMedia.appendChild(twitter)
+    socialMedia.appendChild(twitch)
+    socialMedia.appendChild(insta)
+    
+    playerName.appendChild(socialMedia)
+    
+    profile.appendChild(playerName)
+    
+    let flag = document.createElement("p")
+    let flagPhoto = document.createElement("img")
+    flagPhoto.classList.add("flag")
+    flagPhoto.setAttribute('src', player4.countryFlag)
+    flagPhoto.setAttribute('alt', 'bosnia-flag')
+    flag.textContent = player4.name
+    
+    flag.appendChild(flagPhoto)
+    
+    profile.appendChild(flag)
+    
+    let age = document.createElement("p")
+    age.classList.add('age')
+    age.textContent = "Age"
+    let years = document.createElement("span")
+    years.classList.add('years')
+    years.textContent = player4.age
+    
+    age.appendChild(years)
+    
+    profile.appendChild(age)
+    
+    let team = document.createElement("p")
+    team.classList.add('team')
+    team.textContent = 'Current Team'
+    let teamName = document.createElement('span')
+    teamName.textContent = player4.team
+    let teamLogo = document.createElement('img')
+    teamLogo.classList.add('navi-logo')
+    teamLogo.setAttribute('src', player4.teamFlag)
+    teamLogo.setAttribute('alt', 'team-logo')
+    
+    
+    teamName.appendChild(teamLogo)
+    team.appendChild(teamName)
+    profile.appendChild(team)
+    
+    let rank = document.createElement('h1')
+    rank.classList.add('rank')
+    rank.textContent = "#"+player4.rankposition
+    
+    profile.appendChild(rank)
+    
+    let statsTable = document.createElement('table')
+    
+    let tr1 = document.createElement('tr')
+    let tr2 = document.createElement('tr')
+    let tr3 = document.createElement('tr')
+    let tr4 = document.createElement('tr')
+    
+    let rating = document.createElement('th')
+    rating.textContent = "RATING 1.0"
+    let dpr = document.createElement('th')
+    dpr.textContent = "DPR"
+    let kast = document.createElement('th')
+    kast.textContent = "KAST"
+    
+    tr1.appendChild(rating)
+    tr1.appendChild(dpr)
+    tr1.appendChild(kast)
+    
+    let ratingStat = document.createElement('td')
+    ratingStat.textContent = player4.stats.rating
+    let dprStat = document.createElement('td')
+    dprStat.textContent = player4.stats.dpr
+    let kastStat = document.createElement('td')
+    kastStat.textContent = player4.stats.kast
+    
+    tr2.appendChild(ratingStat)
+    tr2.appendChild(dprStat)
+    tr2.appendChild(kastStat)
+    
+    let impact = document.createElement('th')
+    impact.textContent = "IMPACT"
+    let adr = document.createElement('th')
+    adr.textContent = "ADR"
+    let kpr = document.createElement('th')
+    kpr.textContent = "KPR"
+    
+    tr3.appendChild(impact)
+    tr3.appendChild(adr)
+    tr3.appendChild(kpr)
+    
+    let impactStat = document.createElement('td')
+    impactStat.textContent = player4.stats.impact
+    let adrStat = document.createElement('td')
+    adrStat.textContent = player4.stats.adr
+    let kprStat = document.createElement('td')
+    kprStat.textContent = player4.stats.kpr
+    
+    tr4.appendChild(impactStat)
+    tr4.appendChild(adrStat)
+    tr4.appendChild(kprStat)
+    
+    statsTable.appendChild(tr1)
+    statsTable.appendChild(tr2)
+    statsTable.appendChild(tr3)
+    statsTable.appendChild(tr4)
+    
+    stats.append(statsTable)
+    
+    const mainPage = document.getElementById("main")
+    
+    mainPage.insertAdjacentElement("afterbegin", playerCard4)
+    
+    }
+    
+    addPlayer4()
+
+  const addPlayer3 = () => {
+
+    let playerCard3 = document.createElement("div");
+    playerCard3.classList.add("player-card");
+    playerCard3.setAttribute('id', 'player3')
+    
+    
+    let playerPhoto = document.createElement("img");
+    playerPhoto.classList.add("player-photo");
+    playerPhoto.setAttribute('src', player3.photo)
+    playerPhoto.setAttribute('alt', 'device')
+    
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+    
+    let stats = document.createElement("div");
+    stats.classList.add("stats-1");
+    
+    playerCard3.appendChild(playerPhoto)
+    playerCard3.appendChild(profile)
+    playerCard3.appendChild(stats)
+    
+    let playerName = document.createElement("h2")
+    playerName.classList.add("playername")
+    playerName.textContent = player3.nick
+    
+    let socialMedia = document.createElement("span")
+    
+    let twitter = document.createElement("a")
+    twitter.setAttribute('href', player3.social.twitter)
+    twitter.setAttribute('target', '_blank')
+    let twitch = document.createElement("a")
+    twitch.setAttribute('href', player3.social.twitch)
+    twitch.setAttribute('target', '_blank')
+    let insta = document.createElement("a")
+    insta.setAttribute('href', player3.social.insta)
+    insta.setAttribute('target', '_blank')
+    
+    let twitterIcon = document.createElement('img')
+    twitterIcon.classList.add('socialIcon')
+    twitterIcon.setAttribute('src', socialIcons.twitter)
+    twitterIcon.setAttribute('alt', 'twitter')
+    
+    let twitchIcon = document.createElement('img')
+    twitchIcon.classList.add('socialIcon')
+    twitchIcon.setAttribute('src', socialIcons.twitch)
+    twitchIcon.setAttribute('alt', 'twitch')
+    
+    let instaIcon = document.createElement('img')
+    instaIcon.classList.add('socialIcon')
+    instaIcon.setAttribute('src', socialIcons.insta)
+    instaIcon.setAttribute('alt', 'insta')
+    
+    
+    twitter.appendChild(twitterIcon)
+    twitch.appendChild(twitchIcon)
+    insta.appendChild(instaIcon)
+    
+    socialMedia.appendChild(twitter)
+    socialMedia.appendChild(twitch)
+    socialMedia.appendChild(insta)
+    
+    playerName.appendChild(socialMedia)
+    
+    profile.appendChild(playerName)
+    
+    let flag = document.createElement("p")
+    let flagPhoto = document.createElement("img")
+    flagPhoto.classList.add("flag")
+    flagPhoto.setAttribute('src', player3.countryFlag)
+    flagPhoto.setAttribute('alt', 'dinamark-flag')
+    flag.textContent = player3.name
+    
+    flag.appendChild(flagPhoto)
+    
+    profile.appendChild(flag)
+    
+    let age = document.createElement("p")
+    age.classList.add('age')
+    age.textContent = "Age"
+    let years = document.createElement("span")
+    years.classList.add('years')
+    years.textContent = player3.age
+    
+    age.appendChild(years)
+    
+    profile.appendChild(age)
+    
+    let team = document.createElement("p")
+    team.classList.add('team')
+    team.textContent = 'Current Team'
+    let teamName = document.createElement('span')
+    teamName.textContent = player3.team
+    let teamLogo = document.createElement('img')
+    teamLogo.classList.add('navi-logo')
+    teamLogo.setAttribute('src', player3.teamFlag)
+    teamLogo.setAttribute('alt', 'team-logo')
+    
+    
+    teamName.appendChild(teamLogo)
+    team.appendChild(teamName)
+    profile.appendChild(team)
+    
+    let rank = document.createElement('h1')
+    rank.classList.add('rank')
+    rank.textContent = "#"+player3.rankposition
+    
+    profile.appendChild(rank)
+    
+    let statsTable = document.createElement('table')
+    
+    let tr1 = document.createElement('tr')
+    let tr2 = document.createElement('tr')
+    let tr3 = document.createElement('tr')
+    let tr4 = document.createElement('tr')
+    
+    let rating = document.createElement('th')
+    rating.textContent = "RATING 1.0"
+    let dpr = document.createElement('th')
+    dpr.textContent = "DPR"
+    let kast = document.createElement('th')
+    kast.textContent = "KAST"
+    
+    tr1.appendChild(rating)
+    tr1.appendChild(dpr)
+    tr1.appendChild(kast)
+    
+    let ratingStat = document.createElement('td')
+    ratingStat.textContent = player3.stats.rating
+    let dprStat = document.createElement('td')
+    dprStat.textContent = player3.stats.dpr
+    let kastStat = document.createElement('td')
+    kastStat.textContent = player3.stats.kast
+    
+    tr2.appendChild(ratingStat)
+    tr2.appendChild(dprStat)
+    tr2.appendChild(kastStat)
+    
+    let impact = document.createElement('th')
+    impact.textContent = "IMPACT"
+    let adr = document.createElement('th')
+    adr.textContent = "ADR"
+    let kpr = document.createElement('th')
+    kpr.textContent = "KPR"
+    
+    tr3.appendChild(impact)
+    tr3.appendChild(adr)
+    tr3.appendChild(kpr)
+    
+    let impactStat = document.createElement('td')
+    impactStat.textContent = player3.stats.impact
+    let adrStat = document.createElement('td')
+    adrStat.textContent = player3.stats.adr
+    let kprStat = document.createElement('td')
+    kprStat.textContent = player3.stats.kpr
+    
+    tr4.appendChild(impactStat)
+    tr4.appendChild(adrStat)
+    tr4.appendChild(kprStat)
+    
+    statsTable.appendChild(tr1)
+    statsTable.appendChild(tr2)
+    statsTable.appendChild(tr3)
+    statsTable.appendChild(tr4)
+    
+    stats.append(statsTable)
+    
+    const mainPage = document.getElementById("main")
+    
+    mainPage.insertAdjacentElement("afterbegin", playerCard3)
+    
+    }
+    
+    addPlayer3()
+
+  const addPlayer2 = () => {
+
+    let playerCard2 = document.createElement("div");
+    playerCard2.classList.add("player-card");
+    playerCard2.setAttribute('id', 'player2')
+    
+    
+    let playerPhoto = document.createElement("img");
+    playerPhoto.classList.add("player-photo");
+    playerPhoto.setAttribute('src', player2.photo)
+    playerPhoto.setAttribute('alt', 'zywoo')
+    
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+    
+    let stats = document.createElement("div");
+    stats.classList.add("stats-1");
+    
+    playerCard2.appendChild(playerPhoto)
+    playerCard2.appendChild(profile)
+    playerCard2.appendChild(stats)
+    
+    let playerName = document.createElement("h2")
+    playerName.classList.add("playername")
+    playerName.textContent = player2.nick
+    
+    let socialMedia = document.createElement("span")
+    
+    let twitter = document.createElement("a")
+    twitter.setAttribute('href', player2.social.twitter)
+    twitter.setAttribute('target', '_blank')
+    let twitch = document.createElement("a")
+    twitch.setAttribute('href', player2.social.twitch)
+    twitch.setAttribute('target', '_blank')
+    let insta = document.createElement("a")
+    insta.setAttribute('href', player2.social.insta)
+    insta.setAttribute('target', '_blank')
+    
+    let twitterIcon = document.createElement('img')
+    twitterIcon.classList.add('socialIcon')
+    twitterIcon.setAttribute('src', socialIcons.twitter)
+    twitterIcon.setAttribute('alt', 'twitter')
+    
+    let twitchIcon = document.createElement('img')
+    twitchIcon.classList.add('socialIcon')
+    twitchIcon.setAttribute('src', socialIcons.twitch)
+    twitchIcon.setAttribute('alt', 'twitch')
+    
+    let instaIcon = document.createElement('img')
+    instaIcon.classList.add('socialIcon')
+    instaIcon.setAttribute('src', socialIcons.insta)
+    instaIcon.setAttribute('alt', 'insta')
+    
+    
+    twitter.appendChild(twitterIcon)
+    twitch.appendChild(twitchIcon)
+    insta.appendChild(instaIcon)
+    
+    socialMedia.appendChild(twitter)
+    socialMedia.appendChild(twitch)
+    socialMedia.appendChild(insta)
+    
+    playerName.appendChild(socialMedia)
+    
+    profile.appendChild(playerName)
+    
+    let flag = document.createElement("p")
+    let flagPhoto = document.createElement("img")
+    flagPhoto.classList.add("flag")
+    flagPhoto.setAttribute('src', player2.countryFlag)
+    flagPhoto.setAttribute('alt', 'france-flag')
+    flag.textContent = player2.name
+    
+    flag.appendChild(flagPhoto)
+    
+    profile.appendChild(flag)
+    
+    let age = document.createElement("p")
+    age.classList.add('age')
+    age.textContent = "Age"
+    let years = document.createElement("span")
+    years.classList.add('years')
+    years.textContent = player2.age
+    
+    age.appendChild(years)
+    
+    profile.appendChild(age)
+    
+    let team = document.createElement("p")
+    team.classList.add('team')
+    team.textContent = 'Current Team'
+    let teamName = document.createElement('span')
+    teamName.textContent = player2.team
+    let teamLogo = document.createElement('img')
+    teamLogo.classList.add('navi-logo')
+    teamLogo.setAttribute('src', player2.teamFlag)
+    teamLogo.setAttribute('alt', 'team-logo')
+    
+    
+    teamName.appendChild(teamLogo)
+    team.appendChild(teamName)
+    profile.appendChild(team)
+    
+    let rank = document.createElement('h1')
+    rank.classList.add('rank')
+    rank.textContent = "#"+player2.rankposition
+    
+    profile.appendChild(rank)
+    
+    let statsTable = document.createElement('table')
+    
+    let tr1 = document.createElement('tr')
+    let tr2 = document.createElement('tr')
+    let tr3 = document.createElement('tr')
+    let tr4 = document.createElement('tr')
+    
+    let rating = document.createElement('th')
+    rating.textContent = "RATING 1.0"
+    let dpr = document.createElement('th')
+    dpr.textContent = "DPR"
+    let kast = document.createElement('th')
+    kast.textContent = "KAST"
+    
+    tr1.appendChild(rating)
+    tr1.appendChild(dpr)
+    tr1.appendChild(kast)
+    
+    let ratingStat = document.createElement('td')
+    ratingStat.textContent = player2.stats.rating
+    let dprStat = document.createElement('td')
+    dprStat.textContent = player2.stats.dpr
+    let kastStat = document.createElement('td')
+    kastStat.textContent = player2.stats.kast
+    
+    tr2.appendChild(ratingStat)
+    tr2.appendChild(dprStat)
+    tr2.appendChild(kastStat)
+    
+    let impact = document.createElement('th')
+    impact.textContent = "IMPACT"
+    let adr = document.createElement('th')
+    adr.textContent = "ADR"
+    let kpr = document.createElement('th')
+    kpr.textContent = "KPR"
+    
+    tr3.appendChild(impact)
+    tr3.appendChild(adr)
+    tr3.appendChild(kpr)
+    
+    let impactStat = document.createElement('td')
+    impactStat.textContent = player2.stats.impact
+    let adrStat = document.createElement('td')
+    adrStat.textContent = player2.stats.adr
+    let kprStat = document.createElement('td')
+    kprStat.textContent = player2.stats.kpr
+    
+    tr4.appendChild(impactStat)
+    tr4.appendChild(adrStat)
+    tr4.appendChild(kprStat)
+    
+    statsTable.appendChild(tr1)
+    statsTable.appendChild(tr2)
+    statsTable.appendChild(tr3)
+    statsTable.appendChild(tr4)
+    
+    stats.append(statsTable)
+    
+    const mainPage = document.getElementById("main")
+    
+    mainPage.insertAdjacentElement('afterbegin', playerCard2)
+    
+    }
+    
+    addPlayer2()
+
+  const addPlayer1 = () => {
+
+    let playerCard1 = document.createElement("div");
+    playerCard1.classList.add("player-card");
+    playerCard1.setAttribute('id', 'player1')
+    
+    
+    let playerPhoto = document.createElement("img");
+    playerPhoto.classList.add("player-photo");
+    playerPhoto.setAttribute('src', player1.photo)
+    playerPhoto.setAttribute('alt', 's1mple')
+    
+    let profile = document.createElement("div");
+    profile.classList.add("profile");
+    
+    let stats = document.createElement("div");
+    stats.classList.add("stats-1");
+    
+    playerCard1.appendChild(playerPhoto)
+    playerCard1.appendChild(profile)
+    playerCard1.appendChild(stats)
+    
+    let playerName = document.createElement("h2")
+    playerName.classList.add("playername")
+    playerName.textContent = player1.nick
+    
+    let socialMedia = document.createElement("span")
+    
+    let twitter = document.createElement("a")
+    twitter.setAttribute('href', player1.social.twitter)
+    twitter.setAttribute('target', '_blank')
+    let twitch = document.createElement("a")
+    twitch.setAttribute('href', player1.social.twitch)
+    twitch.setAttribute('target', '_blank')
+    let insta = document.createElement("a")
+    insta.setAttribute('href', player1.social.insta)
+    insta.setAttribute('target', '_blank')
+    
+    let twitterIcon = document.createElement('img')
+    twitterIcon.classList.add('socialIcon')
+    twitterIcon.setAttribute('src', socialIcons.twitter)
+    twitterIcon.setAttribute('alt', 'twitter')
+    
+    let twitchIcon = document.createElement('img')
+    twitchIcon.classList.add('socialIcon')
+    twitchIcon.setAttribute('src', socialIcons.twitch)
+    twitchIcon.setAttribute('alt', 'twitch')
+    
+    let instaIcon = document.createElement('img')
+    instaIcon.classList.add('socialIcon')
+    instaIcon.setAttribute('src', socialIcons.insta)
+    instaIcon.setAttribute('alt', 'insta')
+    
+    
+    twitter.appendChild(twitterIcon)
+    twitch.appendChild(twitchIcon)
+    insta.appendChild(instaIcon)
+    
+    socialMedia.appendChild(twitter)
+    socialMedia.appendChild(twitch)
+    socialMedia.appendChild(insta)
+    
+    playerName.appendChild(socialMedia)
+    
+    profile.appendChild(playerName)
+    
+    let flag = document.createElement("p")
+    let flagPhoto = document.createElement("img")
+    flagPhoto.classList.add("flag")
+    flagPhoto.setAttribute('src', player1.countryFlag)
+    flagPhoto.setAttribute('alt', 'ukraine-flag')
+    flag.textContent = player1.name
+    
+    flag.appendChild(flagPhoto)
+    
+    profile.appendChild(flag)
+    
+    let age = document.createElement("p")
+    age.classList.add('age')
+    age.textContent = "Age"
+    let years = document.createElement("span")
+    years.classList.add('years')
+    years.textContent = player1.age
+    
+    age.appendChild(years)
+    
+    profile.appendChild(age)
+    
+    let team = document.createElement("p")
+    team.classList.add('team')
+    team.textContent = 'Current Team'
+    let teamName = document.createElement('span')
+    teamName.textContent = player1.team
+    let teamLogo = document.createElement('img')
+    teamLogo.classList.add('navi-logo')
+    teamLogo.setAttribute('src', player1.teamFlag)
+    teamLogo.setAttribute('alt', 'team-logo')
+    
+    
+    teamName.appendChild(teamLogo)
+    team.appendChild(teamName)
+    profile.appendChild(team)
+    
+    let rank = document.createElement('h1')
+    rank.classList.add('rank')
+    rank.textContent = "#"+player1.rankposition
+    
+    profile.appendChild(rank)
+    
+    let statsTable = document.createElement('table')
+    
+    let tr1 = document.createElement('tr')
+    let tr2 = document.createElement('tr')
+    let tr3 = document.createElement('tr')
+    let tr4 = document.createElement('tr')
+    
+    let rating = document.createElement('th')
+    rating.textContent = "RATING 1.0"
+    let dpr = document.createElement('th')
+    dpr.textContent = "DPR"
+    let kast = document.createElement('th')
+    kast.textContent = "KAST"
+    
+    tr1.appendChild(rating)
+    tr1.appendChild(dpr)
+    tr1.appendChild(kast)
+    
+    let ratingStat = document.createElement('td')
+    ratingStat.textContent = player1.stats.rating
+    let dprStat = document.createElement('td')
+    dprStat.textContent = player1.stats.dpr
+    let kastStat = document.createElement('td')
+    kastStat.textContent = player1.stats.kast
+    
+    tr2.appendChild(ratingStat)
+    tr2.appendChild(dprStat)
+    tr2.appendChild(kastStat)
+    
+    let impact = document.createElement('th')
+    impact.textContent = "IMPACT"
+    let adr = document.createElement('th')
+    adr.textContent = "ADR"
+    let kpr = document.createElement('th')
+    kpr.textContent = "KPR"
+    
+    tr3.appendChild(impact)
+    tr3.appendChild(adr)
+    tr3.appendChild(kpr)
+    
+    let impactStat = document.createElement('td')
+    impactStat.textContent = player1.stats.impact
+    let adrStat = document.createElement('td')
+    adrStat.textContent = player1.stats.adr
+    let kprStat = document.createElement('td')
+    kprStat.textContent = player1.stats.kpr
+    
+    tr4.appendChild(impactStat)
+    tr4.appendChild(adrStat)
+    tr4.appendChild(kprStat)
+    
+    statsTable.appendChild(tr1)
+    statsTable.appendChild(tr2)
+    statsTable.appendChild(tr3)
+    statsTable.appendChild(tr4)
+    
+    stats.append(statsTable)
+    
+    const mainPage = document.getElementById("main")
+    
+    mainPage.insertAdjacentElement('afterbegin', playerCard1)
+    
+    }
+    
+    addPlayer1()
+
+
+
+
+
+
+
+  
+
+      const mainPage = document.getElementById("main")
+
+      const simple = document.getElementById('player1')
+      const zywoo = document.getElementById('player2')
+      const device = document.getElementById('player3')
+      const niko = document.getElementById('player4')
+      const coldzera = document.getElementById('player5')
+
+      let input = document.getElementById('busca')
+    
+
+function findPlayer() {
+  simple.style.display='none'
+  zywoo.style.display='none'
+  device.style.display='none'
+  niko.style.display='none'
+  coldzera.style.display='none'
+  if (player1.nick.toLowerCase() === input.value.toLowerCase()) {
+    simple.style.display='flex'
+  } else if (player2.nick.toLowerCase() === input.value.toLowerCase()) {
+    zywoo.style.display='flex'
+  } else if (player3.nick.toLowerCase() === input.value.toLowerCase()) {
+    device.style.display='flex'
+  } else if (player4.nick.toLowerCase() === input.value.toLowerCase()) {
+    niko.style.display='flex'
+  } else if (player5.nick.toLowerCase() === input.value.toLowerCase()) {
+    coldzera.style.display='none'
+    coldzera.style.display='flex'
+  }else{
+    alert('Player Not Found!')
+    simple.style.display='flex'
+    zywoo.style.display='flex'
+    device.style.display='flex'
+    niko.style.display='flex'
+    coldzera.style.display='flex'
+  }
+  console.log(input.value)
+}
+
+console.log(input.value)
 
 

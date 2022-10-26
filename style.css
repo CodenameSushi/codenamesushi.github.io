@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+  @keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  @keyframes text-shadow-drop-bl {
+    0% {
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      text-shadow: -6px 6px 18px rgba(0, 0, 0, 1);
+    }
+  }
+  
+  
+  
+  
+.back {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    background-color: black;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: #181B1F;
+    border-radius: 10px 10px 0 0;
+    height: 10vh;
+    width: 80vw;
+}
+
+.linkmenu {
+    position: relative;
+    padding: 2px 2px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkmenu:hover {
+ color: #677e94;
+ transition: all .1s ease-out;
+ padding: 2px 8px;
+}
+
+
+.barra-search {
+    background-color: #181B1F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 10vh;
+}
+
+
+
+
+
+main {
+    border-radius: 0 0 10px 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    background-color: #181B1F;
+    width: 80vw;
+    min-height: 50vh;
+}
+
+.player-card {
+	animation: slide-in-blurred-left .8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    border-radius: 10px ;
+    color: #929a9e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3844;
+    min-width: 80%;
+    max-height: 14.313rem;
+    margin-bottom: 2rem;
+}
+
+.player-card:hover {
+    color: white;
+    transition: all .3s ease-out;
+    padding: 2px 32px;
+   }
+
+
+
+.player-photo {
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+}
+
+.playername {
+    animation: text-shadow-drop-bl infinite both;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .5rem;
+}
+
+
+.rank {
+    animation: text-shadow-drop-bl infinite both;
+    font-size: 3rem;
+    font-weight: bolder;
+    float: left;
+}
+
+.rank:hover {
+    transition: all 1s;
+    color: gold;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+}
+
+input {
+    background-color: #2d3844;
+    
+    height: 2.375rem;
+}
+
+input:focus{
+    color: #677e94;
+    transition: all .1s ease-out;
+    width: 14vw ;
+    padding: 2px 8px;
+   }
+
+#imgSearch {
+    background-color: #2d3844;
+    height: 1.875rem;
+    width: 1.875rem;
+
+}
+
+button {
+    background-color: #2d3844;
+}
+
+button:hover{
+        transition: all .1s ease-out;
+        padding: 4px 4px;
+       }
+
+
+.stats-1 {
+    height: 100%;
+}
+
+table {
+    height: 90%;
+    width: 25rem;
+    text-align: center;
+    border: 1px solid #677e94;
+    border-radius: 10px;
+    margin: .75rem;
+}
+
+td {
+    /* border: 1px solid white; */
+    width: 33%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+th {
+    /* border: 1px solid white; */
+    width: 33%;
+    color: #677e94;
+    font-weight: bold;
+}
+
+
+
+.profile {
+    padding: .5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.player-name {
+    align-self: flex-start;
+}
+
+.flag {
+  width: 1rem;  
+  height: .625rem;
+}
+
+.navi-logo {
+    height: 1.25rem;
+    height: 1.25rem;
+}
+
+.age {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #677e94;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #677e94;
+}
+
+
+
+footer {
+    margin-top: 1.5rem;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #181B1F;
+    height: 8vh;
+    width: 80vw;
+}
+
+#footer:hover {
+    color: white;
+    transition: all .5s ease-out;
+    padding: 2px 32px;
+   }
+
+#git {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#linkedin {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+@media screen and (min-device-width : 300px) and (max-device-width : 1000px) {
+
+    header {
+        max-height: 10vh;
+    }
+
+    #csgo-logo{
+        max-width: 300px;
+        max-height: 100%;
+    }
+
+    .back {
+        background-color: #181B1F;
+        width: 100%;
+       
+    }
+    main{
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: flex-end;
+        max-height: 20vh;
+        gap: .75rem;
+    }
+    .linkmenu {
+        color: white;
+    }
+
+    .player-card {
+        max-height: fit-content;
+        max-width: 95%;
+        flex-direction: column;
+        align-content: center;
+    }
+    .profile {
+        min-width: 80%;
+    }
+
+
+    .rank {
+        align-self: center;
+    }
+
+    table {
+        width: 90vw;
+    }
+
+    #search {
+        gap: 8px;
+        height: 100%;
+        
+    }
+
+    button {
+        border-radius: 0;
+    }
+    
+    input {
+        border-radius: 0;
+    }
+
+    footer {
+        margin-top: 0;
+        font-size: .6rem;
+        gap: 1rem;
+        width: 100vw;
+    }
+
+}
+ 
