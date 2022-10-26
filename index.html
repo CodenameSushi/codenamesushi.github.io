@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>CS:GO RANK</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <div class="logo">
+            <img id="csgo-logo" src="./assets/cs_logo.png" alt="cs-logo">
+
+        </div>
+    </header>
+    <div class="back">
+        <nav class="menu">
+            <span><a class="linkmenu" href="">HLTV TOP 5</a></span>
+            <span><a class="linkmenu" href="#footer">ABOUT</a></span>
+            <span><a class="linkmenu" href="https://pro.eslgaming.com/tour/csgo/rio/pt/#?matchday=1" target="_blank">IEM RIO MAJOR</a></span>
+        </nav>
+        <nav class="barra-search">
+            <div id="search">
+                <input type="search" name="busca" id="busca" value="" onchange="findPlayer()"  placeholder="Search..." required>
+                <button type="submit" id="botao" onclick="findPlayer()">
+                    <img id="imgSearch" src="./assets/searchNew.png" alt="lupa">
+                </button>
+            </div>
+        </nav>
+
+        <main id="main">
+        </main>
     
+    <footer id="footer">
+        <h2>Developed by: CodenameSushi</h2>
+        <span><a href="https://github.com/CodenameSushi" target="_blank"><img src="assets/github-logo.png" alt="github" id="git"></a></span>
+        <span><a href="https://linkedin.com/in/fernandohenriquefilho/" target="_blank"><img src="assets/linkedin.png" alt="github" id="linkedin"></a></span>
+    </footer>
+</div>
 </body>
+
 </html>
